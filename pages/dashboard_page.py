@@ -28,5 +28,5 @@ class DashboardPage:
             self.click_menu_item(item)
 
     # Optional: individual method for specific menu if needed
-    def click_on_admin(self):
-        self.click_menu_item("PIM")
+    def click_on_menu(self,menu):
+        self.click_menu_item(menu)

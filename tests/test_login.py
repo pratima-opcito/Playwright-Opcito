@@ -1,8 +1,10 @@
 # tests/test_login.py
+import pytest
 
 from pages.login_page import LoginPage
 from config.config import USERNAME, PASSWORD
 
+@pytest.mark.smoke
 def test_login_valid_credentials(page):
     login = LoginPage(page)
     login.navigate()
